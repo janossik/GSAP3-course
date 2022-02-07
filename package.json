@@ -1,0 +1,33 @@
+{
+  "name": "gsap3-course",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "gsap3",
+    "course"
+  ],
+  "author": "Marcin Czaniecki",
+  "dependencies": {
+    "gsap": "^3.9.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "parcel": "^2.2.1",
+    "prettier": "^2.5.1"
+  }
+}
