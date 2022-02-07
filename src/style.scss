@@ -7,3 +7,18 @@
 body {
   margin: 0;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.circle {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(160, 160, 160);
+  border-radius: 100%;
+}
