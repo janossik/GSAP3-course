@@ -1,6 +1,6 @@
 {
-  "pół": true,
+  "semi": true,
   "trailingComma": "all",
   "singleQuote": true,
-  "szerokość druku": 70
+  "printWidth": 70
 }
