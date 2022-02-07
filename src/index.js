@@ -1,8 +1,11 @@
 import gsap from 'gsap';
 
-const root = document.getElementById('root');
-
-root.innerHTML = `Project template for GSAP3 course`;
-
-// eslint-disable-next-line no-console
-console.log(gsap, root);
+gsap.to('#root', {
+  delay: 1,
+  duration: 2,
+  scale: 4,
+  x: '+=100%',
+  y: '+=100%',
+  repeat: -1,
+  yoyo: true,
+});
