@@ -82,13 +82,15 @@ class Triangle {
 
 Triangle.boardPrint();
 
-document.addEventListener('click', () => {
+const fn = () => {
   gsap.to([...document.getElementById('svgContainer').children], {
     duration: 50000,
     rotate: 3600000,
     repeat: -1,
     ease: 'linear',
-    yoyo: true,
     stagger: 0.001,
   });
-});
+  document.removeEventListener('click', fn);
+};
+
+document.addEventListener('click', fn);
