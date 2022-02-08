@@ -52,10 +52,10 @@ class Triangle {
   static boardPrint(width = 40, height = 15) {
     const stepY = 6;
     const quantRows = Math.floor(
-      (window.innerHeight - 60) / (height - 1),
+      (window.innerHeight - 60) / height - 15,
     );
     const quantColumns = Math.floor(
-      (window.innerWidth - 80) / (width - 2),
+      (window.innerWidth - 80) / width - 15,
     );
     for (let i = 0; i < quantRows; i += 1) {
       let color = 'snow';
@@ -65,12 +65,12 @@ class Triangle {
       for (let j = 0; j < quantColumns; j += 1) {
         // eslint-disable-next-line no-new
         new Triangle(
-          (width + 2) / 2 + width * j,
-          stepY + height * i,
-          2 + width * j,
-          height + height * i,
-          width + width * j,
-          height + height * i,
+          100 + (width + 2) / 2 + width * j,
+          100 + stepY + height * i,
+          100 + 2 + width * j,
+          100 + height + height * i,
+          100 + width + width * j,
+          100 + height + height * i,
           color,
           i,
           j,
