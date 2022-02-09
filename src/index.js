@@ -37,12 +37,12 @@ class Circle {
   }
 }
 
-const figureAssembly = (length = 40) => {
+const figureAssembly = (quantity = 40) => {
   const x = 600;
   const y = 300;
   let r = 200;
   let color = 'yellow';
-  for (let j = 0; j < length; j += 1) {
+  for (let j = 0; j < quantity; j += 1) {
     if (r < 1) {
       return;
     }
