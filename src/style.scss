@@ -5,6 +5,13 @@
 }
 
 body {
-  background-color: #121212;
-  margin: 0;
+  background-image: url(images/space.png);
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
