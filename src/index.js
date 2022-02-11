@@ -1,5 +1,3 @@
-import gsap from 'gsap';
-
 const element = document.getElementById('feTurbulence');
 let frequency = 0.02;
 let yoyo = false;
