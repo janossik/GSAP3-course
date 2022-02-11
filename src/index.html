@@ -3,12 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link rel="stylesheet" href="style.scss" />
     <title>GSAP3 - Course</title>
+    <style>
+      #root {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <svg id="root">
+      <defs>
+        <filter id="tile">
+          <feTile
+            id="feTile"
+            in="SourceGraphic"
+            x="0"
+            y="0"
+            width="10"
+            height="10"
+          />
+          <feTile />
+        </filter>
+      </defs>
+
+      <image
+        xlink:href="public/sea.jpg"
+        height="100%"
+        style="filter: url(#tile)"
+      />
+    </svg>
     <script type="module" src="index.js"></script>
   </body>
 </html>

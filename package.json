@@ -4,8 +4,11 @@
   "description": "",
   "source": "src/index.html",
   "main": "src/index.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "start": "parcel",
+    "start": "rm -rf dist && mkdir dist && cp -vR ./src/public ./dist && parcel",
     "build": "parcel build"
   },
   "keywords": [
@@ -15,6 +18,14 @@
   "author": "Marcin Czaniecki",
   "dependencies": {
     "gsap": "^3.9.1"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "public",
+        "outDirPattern": "**/dist1"
+      }
+    ]
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.1",
@@ -28,6 +39,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "parcel": "^2.2.1",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "prettier": "^2.5.1"
   }
 }
