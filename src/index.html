@@ -3,12 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link rel="stylesheet" href="style.scss" />
     <title>GSAP3 - Course</title>
+    <style>
+      body {
+        background-color: snow;
+      }
+      svg {
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <button id="switchTeleport">Choose red teleport</button> 
+    <svg
+      id="root"
+      width="1000"
+      height="500"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+     <g id="wheel">
+          <circle id="tire" cx="199" cy="258" r="75" fill="#262626" />
+          <g id="hubcap">
+            <circle
+              id=" hubcap-background"
+              cx="199"
+              cy="258"
+              r="42"
+              fill="#535353"
+            />
+            <path
+              id="hubcap_2"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M249 258C249 285.614 226.614 308 199 308C171.386 308 149 285.614 149 258C149 230.386 171.386 208 199 208C226.614 208 249 230.386 249 258ZM197 299.953V271.858C194.803 271.544 192.771 270.72 191.027 269.509L171.122 289.414C178.073 295.587 187.087 299.488 197 299.953ZM167.586 285.878L187.491 265.974C186.28 264.229 185.456 262.197 185.142 260H157.047C157.512 269.913 161.413 278.927 167.586 285.878ZM157.105 255H185.322C185.771 252.945 186.671 251.058 187.914 249.449L168.061 229.596C161.825 236.385 157.795 245.231 157.105 255ZM171.655 226.12L191.63 246.095C193.233 245.1 195.052 244.42 197 244.142V216.047C187.339 216.5 178.531 220.217 171.655 226.12ZM227.404 288.939C220.615 295.175 211.769 299.205 202 299.895V271.678C204.055 271.229 205.942 270.329 207.551 269.086L227.404 288.939ZM230.88 285.345L210.905 265.37C211.9 263.767 212.58 261.948 212.858 260H240.953C240.5 269.661 236.783 278.469 230.88 285.345ZM240.895 255H212.678C212.282 253.186 211.534 251.503 210.509 250.026L230.414 230.122C236.379 236.838 240.223 245.481 240.895 255ZM226.878 226.586L206.974 246.491C205.497 245.466 203.814 244.718 202 244.322V216.105C211.519 216.777 220.162 220.621 226.878 226.586Z"
+              fill="#C4C4C4"
+            />
+          </g>
+    </svg>
+
     <script type="module" src="index.js"></script>
   </body>
 </html>
