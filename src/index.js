@@ -1,7 +1,8 @@
 import gsap from 'gsap';
 
-window.addEventListener('mousemove', (e) => {
-  gsap.set('#feTile', {
-    attr: { width: e.clientX, height: e.clientY },
-  });
+gsap.to('#feTurbulence', {
+  duration: 20,
+  attr: { baseFrequency: 0.01 },
+  repeat: -1,
+  yoyo: true,
 });

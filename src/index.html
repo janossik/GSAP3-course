@@ -22,23 +22,28 @@
   <body>
     <svg id="root">
       <defs>
-        <filter id="tile">
-          <feTile
-            id="feTile"
-            in="SourceGraphic"
-            x="0"
-            y="0"
-            width="10"
-            height="10"
+        <filter id="displacmentFilter">
+          <feTurbulence
+            id="feTurbulence"
+            type="turbulence"
+            baseFrequency="0.02"
+            numOctaves="2"
+            result="turbulence"
           />
-          <feTile />
+          <feDisplacementMap
+            in2="turbulence"
+            in="SourceGraphic"
+            scale="10"
+            xChannelSelector="B"
+            yChannelSelector="R"
+          />
         </filter>
       </defs>
 
       <image
         xlink:href="public/sea.jpg"
         height="100%"
-        style="filter: url(#tile)"
+        style="filter: url(#displacmentFilter)"
       />
     </svg>
     <script type="module" src="index.js"></script>
